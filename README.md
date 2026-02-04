@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-# Olá, eu sou o João Lucas! 👋
+# Olá, Me chamo João Lucas! 👋
 
 Estudante de **Engenharia de Software na UniCesumar** e aspirante a **Desenvolvedor Backend Java**. 
 
