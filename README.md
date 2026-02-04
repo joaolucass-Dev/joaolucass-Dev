@@ -19,7 +19,7 @@ Atualmente focado em dominar o ecossistema Java, arquitetura de sistemas e solu�
 
 ### 📫 Como me encontrar:
 
-- **LinkedIn:** [www.linkedin.com/in/joão-lucas-58910a236](https://www.linkedin.com/in/joaolucass-dev/)
+- **LinkedIn:** [[Meu Linkedln](https://www.linkedin.com/in/joaolucass-dev/)]
 - **E-mail:** lucass23jo@gmail.com
 
 *"A lógica é o princípio da sabedoria, não o fim."*
