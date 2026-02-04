@@ -4,7 +4,7 @@
 
 Estudante de **Engenharia de Software na UniCesumar** e aspirante a **Desenvolvedor Backend Java**. 
 
-Atualmente focado em dominar o ecossistema Java, arquitetura de sistemas e soluções escaláveis. Tenho experiência prática com suporte técnico e automação de processos.
+Atualmente focado em dominar o ecossistema Java, arquitetura de sistemas e soluções escaláveis.
 
 ---
 
