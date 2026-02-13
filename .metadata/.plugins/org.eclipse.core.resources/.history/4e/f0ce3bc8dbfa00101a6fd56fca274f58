@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class three {
+	static void main(String[] args) {
+		try(Scanner sc = new Scanner(System.in)){
+			int number, hours;
+			double salary;
+			System.out.println("Qual o numero do funcionario? ");
+			number = sc.nextInt();
+			
+			System.out.println("Quantas horas esse funcionario trabalha? ");
+			hours = sc.nextInt();
+			
+			System.out.println("Qual o seu salario? ");
+			salary = sc.nextDouble() + hours;
+			
+			
+			System.out.println("-------INFORMAÇÕES DESSE FUNCIONARIO-------");
+			System.out.println("Number: " + number);
+			System.out.println("Salary: " + salary);
+			System.out.println("Hours work: " + hours);
+			
+		}
+	}
+}

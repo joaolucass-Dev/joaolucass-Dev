@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Locale;
+
+
+public class two extends One {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("\n-------Valor do raio de um circulo--------");
+	
+		double valor;
+		System.out.println("Digite o valor do raio: ");
+		valor = sc.nextDouble();
+		
+		double raio;
+		raio = Math.pow(valor, 2);
+		double Pi = 3.1459;
+		double area = Pi*raio;
+		
+		System.out.printf("o valor do raio de um circulo é igual a: %.4n %n", area);
+		}
+}

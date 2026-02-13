@@ -1,0 +1,38 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_ten {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		try (Scanner sc = new Scanner(System.in)) {
+		double horas = sc.nextDouble();
+		double horastotal = 5;
+		double restante = horas;
+		
+		
+		if(horas > 2) {
+			restante -= 2;
+			if (restante <= 3) {
+				horastotal += restante * 3;
+				restante = 0;
+			}
+			else {
+				horastotal += 3 * 5 + 5;
+				
+				
+			}
+			if(restante > 0) {
+				horastotal += restante * 14 + 5 + 5;
+			}
+			
+			
+		}
+		else {
+			System.out.println("Vc ficou abaixo de 2hrs, valor fixo de R$ " + horastotal);
+		}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

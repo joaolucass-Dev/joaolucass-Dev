@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class exercicio_five {
+	void main(String[] args) {
+		System.out.println("========Verify Number Par or Impa========");
+		try (Scanner sc = new Scanner(System.in)) {
+			int escolha;
+			int quantidade;
+			double cachorro = 4.00, xsalada = 4.50, xbacon = 5.00, torrada = 2.00, refri = 1.50;
+			System.out.println("Cardapio de hoje:");
+			System.out.println("1: Cachorro Quente -- R$ 4.00");
+			System.out.println("2: X-Salada -- R$ 4.50");
+			System.out.println("3: X-Bacon -- R$ 5.00");
+			System.out.println("4: Torrada Simples -- R$ 2.00");
+			System.out.println("5: Refrigerante -- R$ 1.50");
+			System.out.println("");
+			System.out.println("Escolha um numero de 1 a 5 ");
+			escolha = sc.nextInt();
+			if (escolha == 1) {
+				System.out.println("Quantos Cachorro quente vc deseja?");
+				quantidade = sc.nextInt();
+
+				total(sc, quantidade, cachorro);
+
+			} else if (escolha == 2) {
+				
+
+			} else if (escolha == 3) {
+				
+
+			} else if (escolha == 4) {
+				
+
+			} else if (escolha == 5) {
+				
+
+			}
+			else{
+				System.out.println("Obg Pela Preferencia");
+			}
+		}
+	}
+	
+	void total(Scanner sc, int count, double choice) {
+		System.out.println("O total fica: " + count * choice);
+		confirm(sc);
+	}
+	
+	void confirm(Scanner sc) {
+		String process;
+		System.out.println("Deseja prosseguir? s/n ");
+		process = sc.next();
+		if(process == "s") {
+			System.out.println("Obg Pela Preferencia");
+		}
+		else if (process == "n"){
+			System.out.println("Obg Pela Preferencia");
+		}
+		
+	}
+}

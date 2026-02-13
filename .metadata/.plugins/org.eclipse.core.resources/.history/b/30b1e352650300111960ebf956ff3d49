@@ -1,0 +1,48 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_nine {
+	public static void main(String[] args) {
+		try(Scanner sc = new Scanner(System.in)) {
+		Locale.setDefault(Locale.US);
+		double litros = sc.nextDouble();;
+		double litrostotal = 0;
+		double restante = litros;
+		
+		if (restante > 100) {
+			restante = restante - 100;
+			if(restante <= 101) {
+				litrostotal += restante * 0.10;
+				restante = 0;
+			}
+			else {
+				litrostotal += 400 * 0.08;
+				restante -= 400;
+				
+			}
+			if(restante > 0) {
+				
+				if (restante <= 500) {
+					litrostotal += restante * 0.18;
+					restante = 0;
+				} else {
+					litrostotal += 500 * 0.18;
+					restante -= 500;
+				}
+			}
+			if (restante > 0) {
+				litrostotal += restante * 0.28;
+			}
+		}
+		if (litrostotal == 0.0) {
+			System.out.println("Isento");
+		} else {
+			System.out.printf("R$ %.2f%n", litrostotal);
+		}
+		
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

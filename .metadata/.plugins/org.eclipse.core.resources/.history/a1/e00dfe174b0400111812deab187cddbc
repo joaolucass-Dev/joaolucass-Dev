@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class exercicio_twelve {
+	public static void main(String[] args) {
+		
+		try(Scanner sc = new Scanner(System.in)) {
+			double franquia = sc.nextDouble();
+			double excede;
+			
+			if(franquia > 50) {
+				franquia -= 50;
+				excede = franquia * 2;
+				franquia = excede + 50;
+				System.out.println("Vc pagará ess evalor que excedeu do plano: " + franquia);
+			}
+			else if (franquia < 50) {
+				System.out.println("Vc pagará esse valor apenas: " + franquia);
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

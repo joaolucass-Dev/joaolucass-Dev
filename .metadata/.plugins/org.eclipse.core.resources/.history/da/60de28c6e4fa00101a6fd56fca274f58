@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class four {
+	void main(String[] args) {
+		try(Scanner sc = new Scanner(System.in)) {
+			int capaemestoque = 50;	
+			Double valordascapas = 5.0;
+			
+			int peliculasemestoque = 50;
+			Double valordaspeliculas = 2.0;
+			
+			System.out.println("------Peças Disponveis em estoque------");
+			System.out.println("1 - Capa de celular");
+			System.out.println("2 - Pelicula de ceular");
+			
+			int resposta;
+			System.out.println("Qual vc deseja verificar? VALOR UNITARIO / NUMERO DE PEÇAS DISPONIVEIS ");
+			resposta = sc.nextInt();
+			
+			if(resposta == 1) {
+				System.out.println("vc escolheu capa");
+				System.out.printf("Valor das capas: R$ %.2f%n", valordascapas);
+				System.out.println("Disponiveis em estoque: " + capaemestoque);
+				
+				int count;
+				System.out.println("Vc deseja comprar quantas? ");
+				count = sc.nextInt();
+				double totaldecapas = count * valordascapas;
+				
+				System.out.printf("VALOR A PAGAR: R$ %.2f%nDeseja Continuar?%n", totaldecapas);
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				int decisao;
+				decisao = sc.nextInt();
+				if(decisao == 1) {
+					System.out.println("Obg pela compra!!!");
+				}
+				else if(decisao == 2) {
+					System.out.println("Q Pena! Volte outra hora então :)");
+				}
+				
+			}
+			else if (resposta == 2) {
+				System.out.println("vc escolheu Pelicula");
+				System.out.printf("Valor das Peliculas: R$ %.2f%n", valordaspeliculas);
+				System.out.println("Disponiveis em estoque: " + peliculasemestoque);
+				
+				int count;
+				System.out.println("Vc deseja comprar quantas? ");
+				count = sc.nextInt();
+				double totaldepeliculas = count * valordaspeliculas;
+				
+				System.out.printf("VALOR A PAGAR: R$ %.2f%nDeseja Continuar?%n", totaldepeliculas);
+				System.out.println("1 - Sim");
+				System.out.println("2 - Não");
+				int decisao;
+				decisao = sc.nextInt();
+				if(decisao == 1) {
+					System.out.println("Obg pela compra!!!");
+				}
+				else if(decisao == 2) {
+					System.out.println("Q Pena! Volte outra hora então :)");
+				}
+				
+			}
+		}
+		
+	}
+}

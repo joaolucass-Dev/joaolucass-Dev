@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_eleven {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		try(Scanner sc = new Scanner(System.in)) {
+			System.out.println("=======Calculo de notas=======");
+			System.out.println("What grade did this student get in the first semester?");
+			double Firts = sc.nextDouble();
+			System.out.println("What grade did this student get in the second semester?");
+			double Second = sc.nextDouble();
+			double total = Firts + Second;
+			
+			if (total > 60.0) {
+				System.out.println("GREAT!! You passed. Grade " + total);
+			}
+			else {
+				System.out.println("OH NO!! You not passed grade " + total);
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

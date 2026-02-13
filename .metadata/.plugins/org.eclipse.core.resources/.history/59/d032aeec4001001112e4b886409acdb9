@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class exercicio_six {
+	public static void main(String[] args) {
+		System.out.println("================================");
+		try (Scanner sc = new Scanner(System.in)) {
+			double number;
+			System.out.println("Escolha um numero qualquer: ");
+			number = sc.nextDouble();
+			
+			if (number >= 0) {
+				System.out.println("Interfalo [0, 25] ");
+			}
+			else if (number >= 25) {
+				System.out.println("Interfalo [25, 50] ");
+			}
+			else if (number >= 50) {
+				System.out.println("Interfalo [50, 75] ");
+			}
+			else if (number >= 75) {
+				System.out.println("Interfalo [75, 100] ");
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exempla_One {
+	public static void main(String[] args) {
+		try (Scanner sc = new Scanner(System.in)) {
+			boolean next = true;
+			
+			while(next = true) {
+				System.out.println("Escolha um numero diferente de 0: ");
+				int number = sc.nextInt();
+				if (number > 0) {
+					System.out.println("continue, não para");
+				}
+				else {
+					System.out.println("OPA, não é pra ser zero!!");
+				}
+			}
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

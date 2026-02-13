@@ -1,0 +1,35 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_eleven {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		try(Scanner sc = new Scanner(System.in)) {
+			System.out.println("=======Calculo de notas=======");
+			System.out.println("What grade did this student get in the first semester?");
+			double first = sc.nextDouble();
+			
+			
+			
+			System.out.println("What grade did this student get in the second semester?");
+			double second = sc.nextDouble();
+			
+			
+			double total = first + second;
+			
+			if (total > 60) {
+				System.out.printf("GREAT!! You passed. Grade %.2f%n", total);
+			}
+			else if(total >= 40 && total <= 60) {
+				System.out.println("OH NO!! You are Recuperation " + total);
+			}
+			else {
+				System.out.println("OH NO!! You not passed grade. Repeat again in next year!! " + total);
+			}
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

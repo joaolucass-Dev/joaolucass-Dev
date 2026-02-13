@@ -1,0 +1,60 @@
+import java.util.InputMismatchException;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class four {
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
+        try (Scanner sc = new Scanner(System.in)) {
+            boolean lojaAberta = true;
+
+            while (lojaAberta) {
+                try {
+                    System.out.println("\n--- MENU DA LOJA ---");
+                    System.out.println("1 - Capa de celular (R$ 5.00)");
+                    System.out.println("2 - Película de celular (R$ 2.00)");
+                    System.out.println("0 - Sair");
+                    System.out.print("Escolha uma opção: ");
+                    
+                    int opcao = sc.nextInt();
+
+                    if (opcao == 0) {
+                        lojaAberta = false;
+                        System.out.println("Saindo... Volte sempre!");
+                    } else if (opcao == 1) {
+                        realizarVenda(sc, "Capa de celular", 5.0);
+                    } else if (opcao == 2) {
+                        realizarVenda(sc, "Película de celular", 2.0);
+                    } else {
+                        System.out.println("Opção inválida!");
+                    }
+
+                } catch (InputMismatchException e) {
+                    System.err.println("ERRO: Use apenas números!");
+                    sc.next(); // Limpa o lixo do teclado
+                }
+            }
+        }
+    }
+
+    // MÉTODO REUTILIZÁVEL: Toda a lógica de venda em um só lugar
+    public static void realizarVenda(Scanner sc, String produto, double precoUnitario) {
+        System.out.println("\n>>> Você escolheu: " + produto);
+        System.out.print("Quantas unidades deseja comprar? ");
+        int quantidade = sc.nextInt();
+
+        double total = quantidade * precoUnitario;
+        System.out.printf("TOTAL A PAGAR: R$ %.2f%n", total);
+
+        System.out.println("Confirmar compra? (1-Sim / 2-Não)");
+        int decisao = sc.nextInt();
+
+        if (decisao == 1) {
+            System.out.println("Compra de " + produto + " realizada com sucesso! Obg!");
+        } else {
+            System.out.println("Venda cancelada.");
+        }
+    }
+}

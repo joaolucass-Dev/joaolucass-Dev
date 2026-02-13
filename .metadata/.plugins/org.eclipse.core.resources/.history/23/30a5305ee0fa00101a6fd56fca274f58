@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class four {
+	void main(String[] args) {
+		try(Scanner sc = new Scanner(System.in)) {
+			int capaemestoque = 50;	
+			Double valordascapas = 5.00;
+			
+			int peliculasemestoque = 50;
+			Double valordaspeliculas = 5.00;
+			
+			System.out.println("------Peças Disponveis em estoque------");
+			System.out.println("1 - Capa de celular");
+			System.out.println("2 - Pelicula de ceular");
+			
+			int respota;
+			System.out.println("Qual vc deseja verificar? VALOR UNITARIO / NUMERO DE PEÇAS DISPONIVEIS ");
+			respota = sc.nextInt();
+			
+			if(respota == 1) {
+				System.out.println("vc escolheu capa");
+			}
+		}
+		
+	}
+}
